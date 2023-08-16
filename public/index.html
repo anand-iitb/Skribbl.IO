@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skribble</title>
+    <script src="https://cdn.socket.io/4.2.0/socket.io.js"></script>
+    <script>
+        var room_name;
+    </script>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="register_window">
+        <div>
+            <input type="text" id="username" name="username" placeholder="Nickname" required>
+            <p id="name_error"></p>
+        </div>
+        <button id="register">Play!!</button>
+    </div>
+    <div id="user_prof" style="display: none;">
+        <h1 id="name_display"></h1>
+    </div>
+    <div id="create_room" style="display: none;padding : 10px;">
+        <div>
+            <input type="text" id="roomname" name="roomname" placeholder="Room Name" required>
+            <p id="room_error"></p>
+        </div>
+        <button id="create_room_public">Create public room</button>
+    </div>
+    <div id="private_create_room" style="display: none;padding : 10px;">
+        <div>
+            <input type="text" id="private_roomname" name="roomname" placeholder="Room Name" required>
+            <input type="text" id="private_roomname_key" name="roomname_key" placeholder="Key" required>
+            <p id="room_error"></p>
+        </div>
+        <button id="create_room_private">Create private room</button>
+    </div>
+    <div id="join_room" style="display: none;">
+        
+        <!-- <button id="join_rooom">Join room</button> -->
+    </div>
+    <div id="join_private_room" style="display: none;border-width: 1px;">
+        <input type="text" id="pvt_room" name="roomname" placeholder="Room Name" required>
+        <input type="text" id="pvt_room_key" name="roomname_key" placeholder="Key" required>
+        <button id="join_pvt_room">Join</button>
+    </div>
+    <div id="room_list" style="display: none;">
+        <label for="rooms">Choose a room</label>
+        <select id="rooms" name="rooms">
+        </select>
+        <input id="room_join" type="submit" value="join">
+    </div>
+    <h2 id="room_name"></h2>
+    <div id="timer" style="display: none">
+        
+    </div>
+    <div id="chat" style="display: none;">
+        
+    </div>
+    <div id="lobby" style="display: none;">
+        <button type="submit">Start Game</button> 
+    </div>
+    <div id="playerlist" style="display: none;">
+    </div>
+    <div id="words" style="display: none;">
+        <button id="word1" type="submit"></button>
+        <button id="word2" type="submit"></button>
+        <button id="word3" type="submit"></button>
+    </div>
+    <div id="chosen_word" style="display: none;">
+        
+    </div>
+    <div id="headers" style="display :none;">
+        <p id="round_no"></p>
+        <p id="action"></p>
+    </div> 
+    <div id="chat-box" style="display: none;">
+        <input type="text" name="msg" placeholder="Type your msg here" required>
+        <button type="submit">Send</button>
+    </div>
+    <div id="drawing-board" style="display: none">
+        <canvas id="myPics" width="700" height="500"></canvas> 
+    </div>
+    <div id="palette" style="display: none;">
+        <div id="clear">
+            <button id="clear_btn" type="button">clear</button>
+        </div>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="10" value="5" class="slider" id="myRange">
+        </div>
+        <div id="colour">
+            <button id="red" type="button">
+                <button id="yellow" type="button">
+                    <button id="orange" type="button">
+                        <button id="green" type="button">
+                            <button id="violet" type="button">
+                                <button id="blue" type="button">
+                                    <button id="brown" type="button">
+                                        <button id="black" type="button">
+                                            <button id="grey" type="button">
+                                                <button id="white" type="button">
+                                                </div>
+                                            </div>
+                                            
+                                            <div id="votekick" style="display: none;">
+                                                <button id="votekick_btn" type="button">Votekick</button>
+                                            </div>
+                                            <div id="leader_board" style="display: none;"></div>
+                                            <script src="/working.js"></script>
+                                        </body>
+                                        </html>

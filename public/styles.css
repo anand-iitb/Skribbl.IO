@@ -1,0 +1,188 @@
+body{
+    background-color: rgb(123, 158, 241);
+
+}    
+#name_error{
+    display: inline;
+}
+#register_window{
+    position: relative;
+    top: 180px;
+    left: 35%;
+    border-radius: 40px;
+    background-color: rgb(83, 214, 71);
+    /* border: 3px solid rgb(13, 160, 0); */
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    box-shadow: 2px 2px 7px rgb(107, 107, 107);
+
+}
+#username{
+    border-radius: 10px;
+    border: 3px solid rgb(13, 160, 0);
+    position: absolute;
+    top: 130px;
+    left: 70px;
+    height: 50px;
+    width: 300px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 7px rgb(56, 83, 55);
+
+
+}
+#register{
+    border-radius: 10px;
+    border: 3px solid rgb(13, 160, 0);
+    width: 170px;
+    height: 70px;
+    position: absolute;
+    top: 230px;
+    left: 140px;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(13, 160, 0);
+    color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 7px rgb(56, 83, 55);
+
+}
+::placeholder{
+    color: rgb(0, 0, 0);
+    opacity: 0.4;
+}
+
+#chat-box{
+    position: fixed;
+    top: 600px;
+    left: 75%;
+    width: 20%; 
+}
+
+#drawing-board{
+    position: fixed;
+    top: 100px;
+    left: 20%;
+    width: 700px;
+}
+
+#chat{
+    position: fixed;
+    top: 100px;
+    left: 75%;
+    width: 20%;
+    height: 500px;
+    overflow: auto;
+    background-color: rgb(83, 214, 71);
+    border: 1px solid black;
+    
+}
+
+canvas{
+    border: 1px solid rgb(152, 243, 48);
+    width: 700px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+  }
+
+#palette{
+    position: fixed;
+    bottom: 10px;
+    left: 35%;
+}
+
+#red{
+    background-color: red;
+    height: 20px;
+    width: 20px;
+}
+
+#blue{
+    background-color: blue;
+    height: 20px;
+    width: 20px;
+}
+
+#green{
+    background-color: green;
+    height: 20px;
+    width: 20px;
+}
+
+#yellow{
+    background-color: yellow;
+    height: 20px;
+    width: 20px;
+}
+
+#black{
+    background-color: black;
+    height: 20px;
+    width: 20px;
+}
+
+#white{
+    background-color: white;
+    height: 20px;
+    width: 20px;
+}
+
+#brown{
+    background-color: brown;
+    height: 20px;
+    width: 20px;
+}
+
+#orange{
+    background-color: orange;
+    height: 20px;
+    width: 20px;
+}
+
+#violet{
+    background-color: violet;
+    height: 20px;
+    width: 20px;
+}
+
+#grey{
+    background-color: grey;
+    height: 20px;
+    width: 20px;
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #a9a7a7;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
